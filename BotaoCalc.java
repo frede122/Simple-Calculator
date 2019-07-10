@@ -12,28 +12,28 @@ import java.lang.ArithmeticException;
 
 public class BotaoCalc{
 
-    private JButton btnProximo = new JButton("Proximo");
-    private JButton btnClear = new JButton("Clear");
-    private JButton btnExit = new JButton("Exit");
+	private JButton btnProximo = new JButton("Proximo");
+	private JButton btnClear = new JButton("Clear");
+	private JButton btnExit = new JButton("Exit");
 
-    private JButton btnMais = new JButton("+");
-    private JButton btnMenos = new JButton("-");
-    private JButton btnDiv = new JButton("/");
-    private JButton btnMulti = new JButton("*");
-    private JButton btnIgual = new JButton("=");
+	private JButton btnMais = new JButton("+");
+	private JButton btnMenos = new JButton("-");
+	private JButton btnDiv = new JButton("/");
+	private JButton btnMulti = new JButton("*");
+	private JButton btnIgual = new JButton("=");
 
-    private JButton btn1 = new JButton("1");
-    private JButton btn2 = new JButton("2");
-    private JButton btn3 = new JButton("3");
-    private JButton btn4 = new JButton("4");
-    private JButton btn5 = new JButton("5");
-    private JButton btn6 = new JButton("6");
-    private JButton btn7 = new JButton("7");
-    private JButton btn8 = new JButton("8");
-    private JButton btn9 = new JButton("9");
-    private JButton btn0 = new JButton("0");
-    private JTextField field;
-    private float a = 1, b = 1, result = 0;
+	private JButton btn1 = new JButton("1");
+	private JButton btn2 = new JButton("2");
+	private JButton btn3 = new JButton("3");
+	private JButton btn4 = new JButton("4");
+	private JButton btn5 = new JButton("5");
+	private JButton btn6 = new JButton("6");
+	private JButton btn7 = new JButton("7");
+	private JButton btn8 = new JButton("8");
+	private JButton btn9 = new JButton("9");
+	private JButton btn0 = new JButton("0");
+	private JTextField field;
+	private float a = 1, b = 1, result = 0;
 
 	public JButton getBtnProximo() {
 		return this.btnProximo;
