@@ -22,7 +22,6 @@ public class LabelCalc{
         label3.setBounds(5, 70, 70, 25);
     }
 
-
 	public JLabel getLabel1() {
 		return this.label1;
 	}
