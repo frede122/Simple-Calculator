@@ -24,7 +24,7 @@ public class TextBoxCalc {
     }
 
 
-	public static void limpaCaixa(JTextField f) {
+    public static void limpaCaixa(JTextField f) {
         f.setText("");
         f.requestFocus();
     }
@@ -41,28 +41,28 @@ public class TextBoxCalc {
     }
 
 
-	public JTextField getText1() {
-		return this.text1;
-	}
+    public JTextField getText1() {
+        return this.text1;
+    }
 
-	public void setText1(JTextField text1) {
-		this.text1 = text1;
-	}
+    public void setText1(JTextField text1) {
+        this.text1 = text1;
+    }
 
-	public JTextField getText2() {
-		return this.text2;
-	}
+    public JTextField getText2() {
+        return this.text2;
+    }
 
-	public void setText2(JTextField text2) {
-		this.text2 = text2;
-	}
+    public void setText2(JTextField text2) {
+        this.text2 = text2;
+    }
 
-	public JTextField getText3() {
-		return this.text3;
-	}
+    public JTextField getText3() {
+        return this.text3;
+    }
 
-	public void setText3(JTextField text3) {
-		this.text3 = text3;
-	}
+    public void setText3(JTextField text3) {
+        this.text3 = text3;
+    }
 
 }
