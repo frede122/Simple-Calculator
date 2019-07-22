@@ -95,6 +95,7 @@ public class JanelaPrinc extends JFrame{
         this.add(bt.getBtnIgual());
 
         this.setLayout(null);
-        this.setSize(300, 350);
+        this.setSize(285, 350);
+	this.setResizable(false); 
     }
 }
