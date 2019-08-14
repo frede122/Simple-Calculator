@@ -33,21 +33,6 @@ public class Calculadora implements ActionListener {
     }
 
     
-    public float gravarValor(JTextField f) {
-        float r = 0;
-        try {
-            r = Float.parseFloat(f.getText());
-
-        } catch (Exception ae) {
-
-            JOptionPane.showMessageDialog(null,
-                    "Valor não numerico, insira novamente os dados \n erro: " + ae.getMessage());
-            TextBoxCalc.limpaCaixa(f);
-        }
-
-        return r;
-
-    }
 
     public void actionPerformed(ActionEvent evt) {
         Object obj = evt.getSource();
@@ -68,15 +53,15 @@ public class Calculadora implements ActionListener {
         }
 
         if (jn.bt.getBtnMais().equals(obj)) {
-            a = gravarValor(jn.tx.getText1());
-            b = gravarValor(jn.tx.getText2());
+            a = Convert.gravarValor(jn.tx.getText1());
+            b = Convert.gravarValor(jn.tx.getText2());
             result = Func.soma(a, b);
 
         }
 
         if (jn.bt.getBtnMenos().equals(obj)) {
-            a = gravarValor(jn.tx.getText1());
-            b = gravarValor(jn.tx.getText2());
+            a = Convert.gravarValor(jn.tx.getText1());
+            b = Convert.gravarValor(jn.tx.getText2());
             try {
                 result = Func.subtrair(a, b);
             } catch (NegaException ne) {
@@ -87,15 +72,15 @@ public class Calculadora implements ActionListener {
         }
 
         if (jn.bt.getBtnMulti().equals(obj)) {
-            a = gravarValor(jn.tx.getText1());
-            b = gravarValor(jn.tx.getText2());
+            a = Convert.gravarValor(jn.tx.getText1());
+            b = Convert.gravarValor(jn.tx.getText2());
             result = a * b;
 
         }
 
         if (jn.bt.getBtnDiv().equals(obj)) {
-            a = gravarValor(jn.tx.getText1());
-            b = gravarValor(jn.tx.getText2());
+            a = Convert.gravarValor(jn.tx.getText1());
+            b = Convert.gravarValor(jn.tx.getText2());
             try {
                 result = Func.dividir(a, b);
             } catch (ArithmeticException ae) {
