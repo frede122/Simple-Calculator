@@ -1,4 +1,5 @@
 import javax.swing.JTextField;
+import javax.swing.JOptionPane;
 
 
 public class Convert{
@@ -10,8 +11,7 @@ public class Convert{
 
         } catch (Exception ae) {
 
-            JOptionPane.showMessageDialog(null,
-                    "Valor não numerico, insira novamente os dados \n erro: " + ae.getMessage());
+            JOptionPane.showMessageDialog(null, "Valor não numerico, insira novamente os dados \n erro: " + ae.getMessage());
             TextBoxCalc.limpaCaixa(f);
         }
 
